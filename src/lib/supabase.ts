@@ -2,8 +2,8 @@
 
 export function createClient() {
   return createBrowserClient(
-    'https://fkwyhmywomhwszlhxdvk.supabase.co',
-    'sb_publishable_TxNwySIbSv7fPJf_1rZMmQ_ti6u9i6F'
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );
 }
 
